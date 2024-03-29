@@ -1,0 +1,16 @@
+{
+    "priority": 2,
+    "request": {
+      "method": "GET",
+      "urlPathPattern": "/users/9([0-9]*)"
+    },
+    "response": {
+      "status": 200,
+      "bodyFileName": "users/user_x_path.json",
+      "headers": {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "*"
+      }
+    }
+  }
