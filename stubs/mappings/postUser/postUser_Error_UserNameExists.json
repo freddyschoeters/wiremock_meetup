@@ -1,0 +1,19 @@
+{
+    "priority": 2,
+    "request": {
+        "method": "POST",
+        "url": "/users",
+        "bodyPatterns": [{
+            "matchesJsonPath" : "$[?(@.username == 'GroteSmurf')]"
+          }]
+	},
+    "response": {
+        "status": 400,
+        "bodyFileName": "postUser/postUser_Error_UserNameExists.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        }
+    }
+}
