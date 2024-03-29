@@ -1,0 +1,15 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/users/99"
+	},
+    "response": {
+        "status": 404,
+        "bodyFileName": "users/user99_NotFound.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        }
+    }
+}
