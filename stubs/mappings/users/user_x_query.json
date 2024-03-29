@@ -1,0 +1,20 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPath": "/users",
+        "queryParameters": {
+            "user": {
+                "matches": "([0-9]+)"
+            }
+        }
+	},
+    "response": {
+        "status": 200,
+        "bodyFileName": "users/user_x_query.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        }
+    }
+}
