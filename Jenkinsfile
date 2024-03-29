@@ -12,6 +12,6 @@ node {
         sh "docker rm -f ${stubName} || true"
     }
     stage("start new version") {
-        sh "docker run -d --rm --name ${stubName} -p ${stubPort}:8080 ${stubImage} --verbose --jetty-header-buffer-size 16384"
+        sh "docker run -d --rm --name ${stubName} -p ${stubPort}:8080 ${stubImage} --verbose --global-response-templating --jetty-header-buffer-size 16384"
     }
 }
