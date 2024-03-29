@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/xml/postuser"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "xml/postUser_OK.xml",
+    "headers": {
+      "Content-Type": "application/xml",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*"
+    }
+  }
+}

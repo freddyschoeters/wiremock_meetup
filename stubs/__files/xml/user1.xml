@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <id>1</id>
+  <name>Leanne Graham</name>
+  <username>Bret</username>
+  <email>Sincere@april.biz</email>
+  <address>
+    <street>Kulas Light</street>
+    <suite>Apt. 556</suite>
+    <city>Gwenborough</city>
+    <zipcode>92998-3874</zipcode>
+    <geo>
+      <lat>-37.3159</lat>
+      <lng>81.1496</lng>
+    </geo>
+  </address>
+  <phone>1-770-736-8031 x56442</phone>
+  <website>hildegard.org</website>
+  <company>
+    <name>Romaguera-Crona</name>
+    <catchPhrase>Multi-layered client-server neural-net</catchPhrase>
+    <bs>harness real-time e-markets</bs>
+  </company>
+</root>

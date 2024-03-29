@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/xml/getusers"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "xml/getUsers.xml",
+    "headers": {
+      "Content-Type": "application/xml",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*"
+    }
+  }
+}

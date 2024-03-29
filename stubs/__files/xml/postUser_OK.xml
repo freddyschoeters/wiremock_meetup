@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <id>{{xPath request.body '/root/id/text()'}}</id>
+  <username>{{xPath request.body '/root/username/text()'}}</username>
+</root>

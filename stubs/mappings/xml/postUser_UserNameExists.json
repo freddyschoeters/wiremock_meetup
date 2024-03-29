@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/xml/postuser",
+    "bodyPatterns": [{
+      "matchesXPath" : {
+        "expression": "/root/username/text()",
+        "contains": "GroteSmurf"
+      }
+    }]
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "xml/postUser_Error_UserNameExists.xml",
+    "headers": {
+      "Content-Type": "application/xml",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*"
+    }
+  }
+}
