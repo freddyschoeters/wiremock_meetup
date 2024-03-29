@@ -1,0 +1,16 @@
+{
+    "priority": 99,
+    "request": {
+        "method": "POST",
+        "url": "/users"
+	},
+    "response": {
+        "status": 201,
+        "bodyFileName": "postUser/postUser_OK_ReturningIdAndName.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        }
+    }
+}
