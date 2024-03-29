@@ -1,0 +1,19 @@
+{
+    "priority": 1,
+    "request": {
+        "method": "POST",
+        "url": "/users",
+        "bodyPatterns": [{
+            "matchesJsonPath" : "$[?(@.phone =~ /((?!^[0-9]*$).)*/)]"
+          }]            
+	},
+    "response": {
+        "status": 400,
+        "bodyFileName": "postUser/postUser_Error_InvalidFormatPhoneNr.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        }
+    }
+}
