@@ -1,7 +1,7 @@
 node {
     def stubName = "stubs"
     def stubImage = "${stubName}-image"
-    def stubPort = "9002"
+    def stubPort = "3009"
     stage("checkout") {
         checkout scm
     }
