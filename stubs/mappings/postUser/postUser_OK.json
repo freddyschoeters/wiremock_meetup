@@ -1,4 +1,19 @@
 {
-    "request": "ToDo",
-    "response": "ToDo"
+    "priority": 10,
+    "request": {
+        "method": "POST",
+        "url": "/users",
+        "bodyPatterns": [{
+            "matchesJsonPath" : "$[?(@.id == '1')]"
+          }]  
+	},
+    "response": {
+        "status": 201,
+        "bodyFileName": "postUser/postUser_OK.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        }
+    }
 }
