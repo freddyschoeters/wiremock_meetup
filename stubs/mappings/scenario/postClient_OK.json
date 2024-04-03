@@ -1,0 +1,61 @@
+{
+    "mappings": [
+        {
+            "scenarioName": "Create User",
+            "requiredScenarioState": "Started",
+            "newScenarioState": "Exists",
+            "request": {
+                "method": "POST",
+                "url": "/client",
+                "bodyPatterns": [{
+                    "matchesJsonPath" : "$[?(@.username == 'KleineSmurf')]"
+                  }]  
+            },
+            "response": {
+                "status": 201,
+                "bodyFileName": "scenario/postClient_OK.json",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Methods": "*"
+                }
+            }
+        },
+        {
+            "scenarioName": "Create User",
+            "requiredScenarioState": "Exists",
+            "newScenarioState": "Delete",
+            "request": {
+                "method": "POST",
+                "url": "/client",
+                "bodyPatterns": [{
+                    "matchesJsonPath" : "$[?(@.username == 'KleineSmurf')]"
+                  }]  
+            },
+            "response": {
+                "status": 409,
+                "bodyFileName": "scenario/postClient_ClientExists.json",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Methods": "*"
+                }
+            }
+        },
+        {
+            "scenarioName": "Create User",
+            "requiredScenarioState": "Delete",
+            "newScenarioState": "Started",
+            "request": {
+                "method": "DELETE",
+                "url": "/client",
+                "bodyPatterns": [{
+                    "matchesJsonPath" : "$[?(@.username == 'KleineSmurf')]"
+                  }]  
+            },
+            "response": {
+                "status": 204
+            }
+        }
+    ]
+}
