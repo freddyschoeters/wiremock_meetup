@@ -1,0 +1,14 @@
+{
+    "roomid": 1,
+    "roomName": "666",
+    "type": "A very small cleaning room we don't want to rent out!",
+    "accessible": true,
+    "image": "https://www.mwtestconsultancy.co.uk/img/room1.jpg",
+    "description": "Please enter a description for this room",
+    "features": [
+        "WiFi",
+        "Broom",
+        "Swiffer"
+    ],
+    "roomPrice": 666
+}

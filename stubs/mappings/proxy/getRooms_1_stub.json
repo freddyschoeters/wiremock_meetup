@@ -1,0 +1,16 @@
+{
+    "priority": 1,
+    "request": {
+        "method": "GET",
+        "url": "/room/1"
+	},
+    "response": {
+        "status": 200,
+        "bodyFileName": "proxy/getRoom_1.json",
+        "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "*"
+        }
+      }
+}

@@ -1,0 +1,10 @@
+{
+    "priority": 1,
+    "request": {
+        "method": "GET",
+        "urlPathPattern": "/room/([0-9]*)"
+	},
+    "response": {
+      "proxyBaseUrl": "http://ststobania.westeurope.cloudapp.azure.com:8080"
+    }
+}
