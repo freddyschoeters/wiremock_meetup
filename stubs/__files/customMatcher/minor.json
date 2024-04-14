@@ -1,0 +1,4 @@
+{
+    "age": "{{request.query.age.[0]}}",
+    "discount": "10"
+}

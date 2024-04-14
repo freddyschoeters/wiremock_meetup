@@ -1,0 +1,14 @@
+{
+    "request": {
+        "customMatcher": {
+            "name": "age-group",
+            "parameters": {
+                "ageGroup": "adult"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "customMatcher/adult.json"
+    }
+}
